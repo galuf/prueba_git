@@ -1,0 +1,19 @@
+git init
+git add .
+git commit -m "mensaje"
+git push origin master
+
+git status -> verificar el estado
+git log name -> muestra todos los logs (commits and change)
+git show "name" ->  muestra el commit y los cambios realizados de la version anterior a la actual
+git log "name" -> mostrara tambien los hash (codigos  q identifican a la madificacion)
+git diff hash1 hash2 -> usamos los logs segun "git log" y nos retornara la diferencia
+  hash1 : 7e78365c090e3136aaa1706b63127a12b5f47a27
+  hash2 : e77ba9ab510f2521ad39cf50a4fea2b80d8736fb
+
+> Si queremos volver a una version anterior
+git reset <hash> --hard -> todo vuelve al estado anterior
+git reset <hash> --soft -> lo que estaba en staging continua en stagin
+
+> Cuando hacemos cambios y no hacemos "git add", si ponemos "git diff" mostrara la diferencia entre
+  lo que se tega en stagin y lo que se tenga actualmente modificado
