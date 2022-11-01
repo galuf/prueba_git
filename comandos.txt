@@ -30,6 +30,7 @@ git branch "name" -> para crear una rama
 
 git checkout "name" -> para movernos entre las ramas
 
+------------------------------------------------------------------
 - Para crear una llave publica y privada
 ssh-keygen -t rsa -b 4096 -C "alex.flores.m@uni.pe"
 - Para saber si el servicio ssh esta activo
@@ -53,3 +54,8 @@ git show-ref --tags
 
 - Para subier estos cambios a git hub
 git push origin --tags
+
+- Para borrar un tag
+git tag -d <name>
+git push origin --tags -> para actualizar el repo en la web
+
