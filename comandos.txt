@@ -22,3 +22,6 @@ git log --stat -> muestra los cambios especificos asi como los bytes
 
 git checkout <hash> file -> nos regresa al estado del hash solo al archivo file, si se quiere mantener cambios hacer add y commit
 
+git branch "name" -> para crear una rama
+
+git checkout "name" -> para movernos entre las ramas
