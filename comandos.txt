@@ -25,3 +25,12 @@ git checkout <hash> file -> nos regresa al estado del hash solo al archivo file,
 git branch "name" -> para crear una rama
 
 git checkout "name" -> para movernos entre las ramas
+
+- Para crear una llave publica y privada
+ssh-keygen -t rsa -b 4096 -C "alex.flores.m@uni.pe"
+- Para saber si el servicio ssh esta activo
+val $(ssh-agent -s)
+- Para que el sistema detecte la llave
+ssh-add ~/.ssh/id_rsa
+- En caso de error de permisos
+chmod 400 ~/.ssh/id_rsa
