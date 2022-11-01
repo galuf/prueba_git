@@ -11,7 +11,7 @@ git diff hash1 hash2 -> usamos los logs segun "git log" y nos retornara la difer
   hash1 : 7e78365c090e3136aaa1706b63127a12b5f47a27
   hash2 : e77ba9ab510f2521ad39cf50a4fea2b80d8736fb
 
-> Si queremos volver a una version anterior
+> Si queremos volver a una version anterior (tener mucho cuidado al usar)
 git reset <hash> --hard -> todo vuelve al estado anterior
 git reset <hash> --soft -> lo que estaba en staging continua en stagin
 
@@ -19,3 +19,6 @@ git reset <hash> --soft -> lo que estaba en staging continua en stagin
   lo que se tega en stagin y lo que se tenga actualmente modificado
 
 git log --stat -> muestra los cambios especificos asi como los bytes
+
+git checkout <hash> file -> nos regresa al estado del hash solo al archivo file, si se quiere mantener cambios hacer add y commit
+
