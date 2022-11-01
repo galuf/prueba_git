@@ -19,6 +19,10 @@ git reset <hash> --soft -> lo que estaba en staging continua en stagin
   lo que se tega en stagin y lo que se tenga actualmente modificado
 
 git log --stat -> muestra los cambios especificos asi como los bytes
+git log --all -> muestra todo incluyendo branch
+git log --all --graph -> muestra mas visualmente (con rayitas)
+git log --all --graph --decorate --online -> muestra toda la historia de maneta mas comprimida y ordenada
+
 
 git checkout <hash> file -> nos regresa al estado del hash solo al archivo file, si se quiere mantener cambios hacer add y commit
 
@@ -34,3 +38,18 @@ val $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 - En caso de error de permisos
 chmod 400 ~/.ssh/id_rsa
+
+---------------------------------
+Para manejar versiones en github
+-Creamos un tag
+git tag -a <version> -m "msg" hash
+git tag -a v0.1 -m "Resultado primera parte del curso" 2435e69
+
+- para visulaizar tags
+git tag
+
+- para ver un tag u sus hash asociado
+git show-ref --tags
+
+- Para subier estos cambios a git hub
+git push origin --tags
