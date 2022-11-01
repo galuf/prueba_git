@@ -17,3 +17,5 @@ git reset <hash> --soft -> lo que estaba en staging continua en stagin
 
 > Cuando hacemos cambios y no hacemos "git add", si ponemos "git diff" mostrara la diferencia entre
   lo que se tega en stagin y lo que se tenga actualmente modificado
+
+git log --stat -> muestra los cambios especificos asi como los bytes
